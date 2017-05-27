@@ -1,0 +1,42 @@
+{
+  "name": "fnayou/instapush-bundle",
+  "type": "symfony-bundle",
+  "description": "Integration of the fnayou/instapush-php with Symfony2",
+  "keywords": ["instapush", "push", "notification", "sdk", "php", "symfony", "bundle"],
+  "homepage": "https://github.com/fnayou/instapush-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aymen FNAYOU",
+      "email": "fnayou.aymen@gmail.com",
+      "homepage": "http://aymen-fnayou.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "fnayou/instapush-php": "^1.0"
+  },
+  "require-dev": {
+    "escapestudios/symfony2-coding-standard": "^2.10",
+    "fnayou/standards": "^1.2",
+    "friendsofphp/php-cs-fixer": "^2.3"
+  },
+  "suggest": {
+    "php-http/curl-client": "to use cURL http client",
+    "php-http/guzzle6-adapter": "to use Guzzle 6 http client"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fnayou\\InstapushBundle\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias" : {
+      "dev-master" : "1.0.x-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
